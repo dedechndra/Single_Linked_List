@@ -29,6 +29,17 @@ namespace Single_Linked_List
             Node newnode = new Node();
             newnode.rollNumber = rollNo;
             newnode.name = nm;
+            // if the node to be inserted is the first node
+            if(START == null || rollNo <= START.rollNumber)
+            {
+                if((START != null) &&(rollNo == START.rollNumber))
+                {
+                    Console.WriteLine();
+                    return;
+                }
+            }
+
+
 
         }
     }
