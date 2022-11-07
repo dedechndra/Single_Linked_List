@@ -87,6 +87,22 @@ namespace Single_Linked_List
         }
 
         public void Traverse()
+        {
+            if (ListEmpty())
+                Console.WriteLine("\nThe records in the list area: ");
+            else
+            {
+                Console.WriteLine("\nThe records in the list area: ");
+                Node currentNode;
+                for (currentNode = START; currentNode != null;
+                    currentNode = currentNode.next)
+                    Console.Write(currentNode.rollNumber + " "
+                        + currentNode.name + "\n");
+                Console.WriteLine();
+            }
+        }
+
+
     }
 
     class Program
